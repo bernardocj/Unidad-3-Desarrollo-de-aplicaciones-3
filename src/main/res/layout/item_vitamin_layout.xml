@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cv_vitamin"
+    android:background="@color/cardview_shadow_start_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/naranja">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/iv_vitamin"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="16dp"/>
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_vitamin_name"
+        android:layout_toRightOf="@id/iv_vitamin"
+        android:textSize="15pt"
+        android:text="Vitamin name"
+        android:fontFamily="cursive"
+
+        />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_vitamin_dose"
+            android:layout_toRightOf="@id/iv_vitamin"
+            android:layout_below="@+id/tv_vitamin_name"
+            android:text="Dose of vitamin"
+            android:textSize="10pt"
+
+            />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_vitamin_type"
+            android:layout_below="@+id/tv_vitamin_dose"
+            android:text="Vitamin Type"
+            android:textSize="10pt"
+            android:layout_marginLeft="20dp"
+             />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_edit_vitamin"
+            android:src="@android:drawable/ic_menu_edit"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tv_vitamin_name"
+            android:layout_toEndOf="@+id/tv_vitamin_name" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_vitamin_price"
+            android:text="Vitamin Price"
+            android:textSize="10pt"
+            android:layout_alignBaseline="@+id/tv_vitamin_dose"
+            android:layout_alignBottom="@+id/tv_vitamin_dose"
+            android:layout_alignRight="@+id/tv_vitamin_type"
+            android:layout_alignEnd="@+id/tv_vitamin_type"
+            android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp"
+
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_delete_vitamin"
+            android:src="@android:drawable/ic_menu_delete"
+            android:layout_below="@+id/bt_edit_vitamin"
+            android:layout_toRightOf="@+id/tv_vitamin_name"
+            android:layout_toEndOf="@+id/tv_vitamin_name" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
